@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starbell Kids Playschool 🎈</title>
+
+  <!-- Super Fun Fonts! -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Fredoka+One&family=Nunito:wght@600;800;900&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+  <!-- ☁️ Background Clouds -->
+  <div class="sky-clouds">
+    <div class="cloud c1"></div>
+    <div class="cloud c2"></div>
+    <div class="cloud c3"></div>
+    <div class="cloud c4"></div>
+  </div>
+
+  <!-- 📢 Announcement Bar -->
+  <div class="top-bar">
+    <span style="display: inline-block;">🎉 Admissions Open! Register Now! 🎈</span>
+  </div>
+
+  <!-- 🍔 Navigation -->
+  <header id="navbar">
+    <div class="container nav-wrap">
+      <a href="#" class="logo">
+        <img
+          src="image.png"
+          alt="Starbell Kids logo"
+          class="logo-img"
+          width="60"
+          height="60"
+          decoding="async"
+          loading="eager"
+        >
+        <div class="logo-text-wrapper">
+          <span class="logo-text">Starbell</span>
+          <span class="logo-subtext">Kids</span>
+        </div>
+      </a>
+      <div class="nav-backdrop" id="navBackdrop" hidden></div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#programs">Play Groups</a></li>
+        <li><a href="#why-us">Why Us?</a></li>
+        <li><a href="#staff">Our Teachers</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#enroll">Enroll</a></li>
+        <li class="mobile-only-btn"><a href="#testimonials">Testimonials</a></li>
+        <li class="mobile-only-btn"><a href="#location">Location</a></li>
+        <li class="mobile-only-btn"><a href="#enroll" class="nav-btn">Join Now!</a></li>
+      </ul>
+      <a href="#enroll" class="nav-btn desktop-btn">Join Now!</a>
+      
+      <button
+        class="hamburger"
+        id="hamburger"
+        type="button"
+        aria-label="Open menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- 🏰 Hero -->
+  <section class="hero container">
+    <div class="balloons">
+      <div class="balloon b1"></div>
+      <div class="balloon b2"></div>
+      <div class="balloon b3"></div>
+    </div>
+
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="sparkle s1">✨</div>
+        <div class="sparkle s2">⭐</div>
+
+        <h1 class="h1-super">
+          <span class="w1">Play,</span> <br />
+          <span class="w2">Learn &</span> <br />
+          <span class="w3">Grow!</span>
+        </h1>
+        <p class="p-cute">Welcome to Starbell Kids Playschool! A magical wonderland where little giggles turn into big
+          discoveries! <span class="emoji-rainbow" aria-hidden="true">🌈</span><span aria-hidden="true">🧸</span></p>
+        <div class="hero-cta">
+          <a href="#enroll" class="btn btn-pink btn-wiggle">Book a Visit 🏫</a>
+          <a href="tel:+91XXXXXXXXXX" class="btn btn-yellow btn-wiggle" data-contact="call">Call Now 📞</a>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="hero-img-wrap">
+          <img
+            src="WhatsApp Image 2026-03-16 at 6.58.34 PM.jpeg"
+            alt="Starbell Kids Playschool front view"
+            width="1200"
+            height="900"
+            loading="eager"
+            decoding="async"
+          >
+        </div>
+        <div class="bounce-sticker">100%<br />FUN!</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🧩 Programs -->
+  <section id="programs" class="programs section-pad">
+    <div class="container">
+      <div class="reveal" style="text-align: center;">
+        <h2 class="h2-title">Discover Our Magical Rooms</h2>
+        <p class="p-cute" style="margin: 0 auto 10px;">Every room is designed for absolute fun and joyful learning!</p>
+        <div class="daycare-callout">🍼 Day Care Available! (8 Months to 6 Years)</div>
+      </div>
+
+      <div class="pg-grid">
+        <div class="pg-card c-pink reveal" style="transition-delay: 0.1s;">
+          <div class="pg-icon">🐣</div>
+          <h3 class="pg-title">Play Group</h3>
+          <div class="pg-age">1.5+ Years</div>
+          <p class="pg-desc">Squishy toys, bright colors, and soft giggles! We focus on walking, talking, and making new
+            friends.</p>
+        </div>
+
+        <div class="pg-card c-blue reveal" style="transition-delay: 0.2s;">
+          <div class="pg-icon">🦋</div>
+          <h3 class="pg-title">Pre Kindergarten</h3>
+          <div class="pg-age">2.5+ Years</div>
+          <p class="pg-desc">Messy art, building blocks, and adventure time! Perfect for curious minds who love to ask
+            "why?".</p>
+        </div>
+
+        <div class="pg-card c-green reveal" style="transition-delay: 0.3s;">
+          <div class="pg-icon">🚀</div>
+          <h3 class="pg-title">Lower Kindergarten</h3>
+          <div class="pg-age">3.5+ Years</div>
+          <p class="pg-desc">Getting ready for bigger ideas! ABCs, 123s, and super fun science experiments with safely
+            guided play.</p>
+        </div>
+
+        <div class="pg-card c-orange reveal" style="transition-delay: 0.4s;">
+          <div class="pg-icon">🎓</div>
+          <h3 class="pg-title">Upper Kindergarten</h3>
+          <div class="pg-age">4.5+ Years</div>
+          <p class="pg-desc">Preparing for real school! Advanced reading, confident communication, and spectacular
+            interactive learning.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🎪 Features -->
+  <section id="why-us" class="why-us">
+    <div class="container">
+      <div class="reveal" style="text-align: center;">
+        <h2 class="h2-title">Why Parents Love Us!</h2>
+        <p class="p-cute" style="margin: 0 auto 50px;">We keep your little ones safe, happy, and constantly amazed.</p>
+      </div>
+      <div class="why-grid reveal">
+
+        <div class="feature-box c-blue">
+          <div class="f-icon">🎨</div>
+          <div class="f-text">
+            <h3>Play-Based Magic</h3>
+            <p>Learning hidden inside super fun games and messy arts & crafts!</p>
+          </div>
+        </div>
+
+        <div class="feature-box">
+          <div class="f-icon" style="background: var(--green);">📹</div>
+          <div class="f-text">
+            <h3>Live CCTV Remote Access</h3>
+            <p>Fully equipped with secure CCTV, allowing parents to view their children safely playing remotely.</p>
+          </div>
+        </div>
+
+        <div class="feature-box">
+          <div class="f-icon" style="background: var(--pink); color: white;">🧸</div>
+          <div class="f-text">
+            <h3>Super Safe & Caring</h3>
+            <p>Extra soft floors with <strong>Eva Mats</strong>, rounded corners, and the most loving teachers! Safe
+              play is our priority.</p>
+          </div>
+        </div>
+
+        <div class="feature-box">
+          <div class="f-icon" style="background: var(--purple); color: white;">🛏️</div>
+          <div class="f-text">
+            <h3>Daycare Comfort</h3>
+            <p>We provide <strong>separate cots</strong> for all our Daycare children for a cozy, peaceful nap time.
+            </p>
+          </div>
+        </div>
+
+        <div class="feature-box c-blue">
+          <div class="f-icon" style="background: var(--bg-sky); color: white;">🌊</div>
+          <div class="f-text">
+            <h3>Pure & Fresh</h3>
+            <p>Stay cool in <strong>AC classrooms</strong> with unlimited access to <strong>purified water</strong>.
+            </p>
+          </div>
+        </div>
+
+        <div class="feature-box">
+          <div class="f-icon" style="background: var(--yellow);">👩‍👦</div>
+          <div class="f-text">
+            <h3>Personalized Focus</h3>
+            <p>An amazing <strong>8:1 student-teacher ratio</strong> ensures your child gets all the attention they
+              need.</p>
+          </div>
+        </div>
+
+        <div class="feature-box">
+          <div class="f-icon" style="background: var(--pink); color: white;">✨</div>
+          <div class="f-text">
+            <h3>Neat & Clean Facilities</h3>
+            <p>Spotless, hygienic <strong>restrooms (in & outside)</strong> for keeping our little explorers fresh!
+            </p>
+          </div>
+        </div>
+
+        <div class="feature-box c-blue">
+          <div class="f-icon" style="background: var(--green); color: white;">🏆</div>
+          <div class="f-text">
+            <h3>13 Years of Experience</h3>
+            <p>Our experienced team has been creating magical learning moments for over a decade!</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- 👩‍🏫 Teachers Section -->
+  <section id="staff" class="staff-section container">
+    <div class="reveal" style="text-align: center;">
+      <h2 class="h2-title">Meet Our Magical Teachers!</h2>
+      <p class="p-cute" style="margin: 0 auto;">The sweetest, kindest, and most fun guides for your little super stars!
+        🌟</p>
+    </div>
+
+    <div class="staff-grid">
+      <!-- Row 1 -->
+      <div class="staff-card c-staff-pink reveal" style="transition-delay: 0.1s;">
+        <div class="staff-avatar"><span style="font-size: 3rem;">👩‍🏫</span></div>
+        <h3 class="staff-name">Mrs. P. Vinmani</h3>
+        <p class="staff-desc">B.A., B.Ed.</p>
+        <div class="staff-role" style="border-color: var(--pink); color: var(--pink);">UKG</div>
+      </div>
+
+      <div class="staff-card c-staff-blue reveal" style="transition-delay: 0.2s;">
+        <div class="staff-avatar"><span style="font-size: 3rem;">👩‍🏫</span></div>
+        <h3 class="staff-name">Mrs. Subathra Devi</h3>
+        <p class="staff-desc">M.Sc., B.Ed.</p>
+        <div class="staff-role" style="border-color: var(--blue); color: var(--blue);">LKG</div>
+      </div>
+
+      <div class="staff-card c-staff-green reveal" style="transition-delay: 0.3s;">
+        <div class="staff-avatar"><span style="font-size: 3rem;">👩‍🏫</span></div>
+        <h3 class="staff-name">Mrs. V. Kowsalya</h3>
+        <p class="staff-desc">Montessori</p>
+        <div class="staff-role" style="border-color: var(--green); color: var(--green);">Play Group</div>
+      </div>
+
+      <div class="staff-card c-staff-yellow reveal" style="transition-delay: 0.4s;">
+        <div class="staff-avatar"><span style="font-size: 3rem;">👩‍🏫</span></div>
+        <h3 class="staff-name">Mrs. Usha Rani</h3>
+        <p class="staff-desc">D.G.N.M., B.A., C.R.I.</p>
+        <div class="staff-role" style="border-color: var(--yellow); color: var(--orange);">Pre.K.G.</div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="staff-card c-staff-purple reveal" style="transition-delay: 0.5s;">
+        <div class="staff-avatar"><span style="font-size: 3rem;">👩‍🏫</span></div>
+        <h3 class="staff-name">Mrs. Divya</h3>
+        <p class="staff-desc">B.A.</p>
+        <div class="staff-role" style="border-color: var(--purple); color: var(--purple);">Teacher</div>
+      </div>
+
+      <div class="staff-card c-staff-pink reveal" style="transition-delay: 0.6s;">
+        <div class="staff-avatar"><span style="font-size: 3rem;">👩‍🏫</span></div>
+        <h3 class="staff-name">Mrs. Selvi</h3>
+        <p class="staff-desc">Support Staff</p>
+        <div class="staff-role" style="border-color: var(--pink); color: var(--pink);">Nanny</div>
+      </div>
+
+      <div class="staff-card c-staff-blue reveal" style="transition-delay: 0.7s;">
+        <div class="staff-avatar"><span style="font-size: 3rem;">👩‍🏫</span></div>
+        <h3 class="staff-name">Mrs. Vimala</h3>
+        <p class="staff-desc">Support Staff</p>
+        <div class="staff-role" style="border-color: var(--blue); color: var(--blue);">Nanny</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 📸 Gallery Section -->
+  <section id="gallery" class="gallery-section">
+    <div class="container reveal">
+      <p class="gallery-label">Our World</p>
+      <h2 class="h2-title">Photo Gallery 📸</h2>
+      <p class="p-cute" style="margin: 0 auto 50px;">Peek into the magical moments at Starbell Kids! ✨</p>
+    </div>
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </section>
+
+  <!-- 💬 Testimonials -->
+  <section id="testimonials" class="testimonials section-pad">
+    <div class="container">
+      <div class="reveal" style="text-align: center;">
+        <p class="testimonials-kicker">Google Reviews</p>
+        <h2 class="h2-title">What Parents Say</h2>
+        <p class="p-cute" style="margin: 0 auto 24px;">Real words from real families who’ve been part of Starbell Kids.</p>
+      </div>
+
+      <div class="testimonials-marquee reveal" aria-label="Testimonials marquee">
+        <div class="testimonials-row" aria-hidden="true">
+          <div class="testimonials-track">
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">Selvaraj G</div>
+                  <div class="testimonial-meta">1 review · a month ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">Mrs. Vinmani miss (The Principal of Star bell kids) is a loveable teacher for my son, he started his school at 1year 6months without a word saying of amma but now he grown up @ 3 years with a talent saying the name of 20 world country.</p>
+            </article>
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">Anoushka Usha</div>
+                  <div class="testimonial-meta">3 reviews · 3 months ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">Star bell kids school is the best school for tambaram.i like the school very much. wonderful experience to working this school. Correspondent vinmani mam is kind hearted and friendly person. I like soo much this school students is lovable kids and the atmosphere is very clean and neat.</p>
+            </article>
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">ANASWARA S HUBERT</div>
+                  <div class="testimonial-meta">3 reviews · 10 months ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">The best school for toddlers and kindergarteners. Mrs. Vinmani, is wonderful—patient, caring, and truly dedicated to each child’s growth.</p>
+            </article>
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">Arthi Murugan</div>
+                  <div class="testimonial-meta">1 review · a year ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">This is a best playschool in Tambaram for kids. The way of teaching is a absolutely mind-blowing. The children learn and discover a lot of new things in this school. Excellent teaching, best principal and wonderful caring.</p>
+            </article>
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">Iyappan A</div>
+                  <div class="testimonial-meta">3 reviews · a year ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">"STAR BELL KIDS" is the best place to have a basic education for our children. We have admitted my brother's son in PP1. Each and every childern is involved to participate in group and individual.</p>
+            </article>
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">Kowsalya Vinoth</div>
+                  <div class="testimonial-meta">2 reviews · 3 months ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">Star bell kids Best school my younger son is studying here.</p>
+            </article>
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">Nandhini's lifestyle</div>
+                  <div class="testimonial-meta">2 reviews · 10 months ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">Hai,my daughter studying playgroup in star Bell's this is best place for kids and kindergarteners,I saw each and every child are enjoying to go school,mrs vinmani mam is so humble , caring and truly dedicated to each child's growth, excellent teaching and she exploring new things to the kids I am very happy to share this to all.</p>
+            </article>
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">Sarvigha Ranjith</div>
+                  <div class="testimonial-meta">1 review · a year ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">Hai,my son studying pp1.He won't refuse a day to go school.Because of environment and his teacher.school is beyond the teaching.Her love and care of each student.I am happy my son is student of ⭐ star bell kids.</p>
+            </article>
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">Selvaraj G</div>
+                  <div class="testimonial-meta">1 review · a month ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">Mrs. Vinmani miss (The Principal of Star bell kids) is a loveable teacher for my son, he started his school at 1year 6months without a word saying of amma but now he grown up @ 3 years with a talent saying the name of 20 world country.</p>
+            </article>
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">Anoushka Usha</div>
+                  <div class="testimonial-meta">3 reviews · 3 months ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">Star bell kids school is the best school for tambaram.i like the school very much. wonderful experience to working this school. Correspondent vinmani mam is kind hearted and friendly person. I like soo much this school students is lovable kids and the atmosphere is very clean and neat.</p>
+            </article>
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">ANASWARA S HUBERT</div>
+                  <div class="testimonial-meta">3 reviews · 10 months ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">The best school for toddlers and kindergarteners. Mrs. Vinmani, is wonderful—patient, caring, and truly dedicated to each child’s growth.</p>
+            </article>
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">Arthi Murugan</div>
+                  <div class="testimonial-meta">1 review · a year ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">This is a best playschool in Tambaram for kids. The way of teaching is a absolutely mind-blowing. The children learn and discover a lot of new things in this school. Excellent teaching, best principal and wonderful caring.</p>
+            </article>
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">Iyappan A</div>
+                  <div class="testimonial-meta">3 reviews · a year ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">"STAR BELL KIDS" is the best place to have a basic education for our children. We have admitted my brother's son in PP1. Each and every childern is involved to participate in group and individual.</p>
+            </article>
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">Kowsalya Vinoth</div>
+                  <div class="testimonial-meta">2 reviews · 3 months ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">Star bell kids Best school my younger son is studying here.</p>
+            </article>
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">Nandhini's lifestyle</div>
+                  <div class="testimonial-meta">2 reviews · 10 months ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">Hai,my daughter studying playgroup in star Bell's this is best place for kids and kindergarteners,I saw each and every child are enjoying to go school,mrs vinmani mam is so humble , caring and truly dedicated to each child's growth, excellent teaching and she exploring new things to the kids I am very happy to share this to all.</p>
+            </article>
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">Sarvigha Ranjith</div>
+                  <div class="testimonial-meta">1 review · a year ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">Hai,my son studying pp1.He won't refuse a day to go school.Because of environment and his teacher.school is beyond the teaching.Her love and care of each student.I am happy my son is student of ⭐ star bell kids.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="testimonials-row testimonials-row--slow" aria-hidden="true">
+          <div class="testimonials-track">
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">Srinivasan Kr</div>
+                  <div class="testimonial-meta">2 reviews · a year ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">'STAR BELL KIDS' is the best place to learn education.Their way of teaching inspires us to learn more.Their teaching interacts us.</p>
+            </article>
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">Selva Sundaram</div>
+                  <div class="testimonial-meta">1 review · 2 months ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">It is nice school</p>
+            </article>
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">Muthu Kumar</div>
+                  <div class="testimonial-meta">2 reviews · 3 months ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">best coaching, best caring.</p>
+            </article>
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">Subathra Devi</div>
+                  <div class="testimonial-meta">1 review · 3 months ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">Peaceful and Happiest place</p>
+            </article>
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">Ram Dass</div>
+                  <div class="testimonial-meta">4 reviews · a year ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">Very good teaching very good place very neat place very good games</p>
+            </article>
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">Amrin Amrin</div>
+                  <div class="testimonial-meta">3 reviews · a year ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">Good place good teaching very super teacher</p>
+            </article>
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">Star Bell's Time</div>
+                  <div class="testimonial-meta">8 reviews · 10 months ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">Feel the experience of exploring new things.</p>
+            </article>
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">Suresh Karthick</div>
+                  <div class="testimonial-meta">3 reviews · a year ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">Toys are very nice and beautiful games</p>
+            </article>
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">Ranjit Kumar</div>
+                  <div class="testimonial-meta">3 reviews · a year ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">Very nice quality education</p>
+            </article>
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">Ramesh Kumar</div>
+                  <div class="testimonial-meta">1 review · a year ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">This is super tuition I like it</p>
+            </article>
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">Antonysamy Anto</div>
+                  <div class="testimonial-meta">2 reviews · a year ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">Super school for kids.</p>
+            </article>
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">Jothi Hilda</div>
+                  <div class="testimonial-meta">1 review · a year ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">Super</p>
+            </article>
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">Srinivasan Kr</div>
+                  <div class="testimonial-meta">2 reviews · a year ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">'STAR BELL KIDS' is the best place to learn education.Their way of teaching inspires us to learn more.Their teaching interacts us.</p>
+            </article>
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">Selva Sundaram</div>
+                  <div class="testimonial-meta">1 review · 2 months ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">It is nice school</p>
+            </article>
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">Muthu Kumar</div>
+                  <div class="testimonial-meta">2 reviews · 3 months ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">best coaching, best caring.</p>
+            </article>
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">Subathra Devi</div>
+                  <div class="testimonial-meta">1 review · 3 months ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">Peaceful and Happiest place</p>
+            </article>
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">Ram Dass</div>
+                  <div class="testimonial-meta">4 reviews · a year ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">Very good teaching very good place very neat place very good games</p>
+            </article>
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">Amrin Amrin</div>
+                  <div class="testimonial-meta">3 reviews · a year ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">Good place good teaching very super teacher</p>
+            </article>
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">Star Bell's Time</div>
+                  <div class="testimonial-meta">8 reviews · 10 months ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">Feel the experience of exploring new things.</p>
+            </article>
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">Suresh Karthick</div>
+                  <div class="testimonial-meta">3 reviews · a year ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">Toys are very nice and beautiful games</p>
+            </article>
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">Ranjit Kumar</div>
+                  <div class="testimonial-meta">3 reviews · a year ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">Very nice quality education</p>
+            </article>
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">Ramesh Kumar</div>
+                  <div class="testimonial-meta">1 review · a year ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">This is super tuition I like it</p>
+            </article>
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">Antonysamy Anto</div>
+                  <div class="testimonial-meta">2 reviews · a year ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">Super school for kids.</p>
+            </article>
+            <article class="testimonial-card">
+              <header class="testimonial-head">
+                <div>
+                  <div class="testimonial-name">Jothi Hilda</div>
+                  <div class="testimonial-meta">1 review · a year ago</div>
+                </div>
+              </header>
+              <p class="testimonial-text">Super</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    (function () {
+      const imgs = [
+        "images/WhatsApp Image 2026-03-17 at 3.47.31 PM (1).jpeg",
+        "images/WhatsApp Image 2026-03-17 at 3.47.32 PM (2).jpeg",
+        "images/WhatsApp Image 2026-03-17 at 3.47.32 PM (3).jpeg",
+        "images/WhatsApp Image 2026-03-17 at 3.47.34 PM (3).jpeg",
+        "images/WhatsApp Image 2026-03-17 at 3.47.35 PM.jpeg",
+        "images/WhatsApp Image 2026-03-17 at 4.11.43 PM.jpeg",
+        "images/WhatsApp Image 2026-03-17 at 4.11.44 PM (1).jpeg",
+        "images/WhatsApp Image 2026-03-17 at 4.11.44 PM.jpeg",
+        "images/WhatsApp Image 2026-03-17 at 4.11.45 PM (1).jpeg",
+        "images/WhatsApp Image 2026-03-17 at 4.11.45 PM.jpeg",
+        "images/WhatsApp Image 2026-03-17 at 4.16.47 PM.jpeg",
+      ];
+
+      const heightBase = [160, 200, 150, 190, 170, 185, 165, 210];
+      const columns = Array.from({ length: 4 }, function (_, colIdx) {
+        const images = imgs.filter(function (_, i) {
+          return i % 4 === colIdx;
+        });
+        const heights = images.map(function (_, i) {
+          return heightBase[i % heightBase.length];
+        });
+        return { images, heights };
+      });
+
+      const grid = document.getElementById("galleryGrid");
+
+      columns.forEach(function (col) {
+        const colEl = document.createElement("div");
+        colEl.className = "gallery-col";
+
+        const doubled = col.images.concat(col.images);
+
+        doubled.forEach(function (src, i) {
+          const card = document.createElement("div");
+          card.className = "gallery-card";
+          card.style.height = col.heights[i % col.heights.length] + "px";
+
+          const img = document.createElement("img");
+          img.src = src;
+          img.alt = "Starbell Kids Gallery Photo";
+          img.loading = "lazy";
+          img.decoding = "async";
+
+          card.appendChild(img);
+          colEl.appendChild(card);
+        });
+
+        grid.appendChild(colEl);
+      });
+    })();
+  </script>
+
+  <!-- 📍 Our Location -->
+  <section id="location" class="location section-pad">
+    <div class="container">
+      <div class="reveal" style="text-align: center;">
+        <p class="location-kicker">Our Location</p>
+        <h2 class="h2-title">Visit Star Bell Kids</h2>
+        <p class="p-cute" style="margin: 0 auto 24px;">Located in Tambaram, we provide a safe and nurturing environment for early childhood education.</p>
+      </div>
+
+      <div class="location-card reveal">
+        <div class="location-map" aria-label="Google Map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.9606260398505!2d80.09927497358787!3d12.910252216223322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525fbed7d9672d%3A0xf6dab3cbd3a605db!2sStar%20Bell%20Kids!5e0!3m2!1sen!2sin!4v1773746085308!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Star Bell Kids Location Map"
+          ></iframe>
+        </div>
+
+        <div class="location-foot">
+          <p class="location-address">169/7, Kanagambaram Street, Ground floor, Peerkankaranai, Old GST Road, Chennai - 600063</p>
+          <a
+            class="btn btn-yellow btn-wiggle location-directions"
+            href="https://www.google.com/maps?daddr=Star%20Bell%20Kids%2C%20169%2F7%2C%20Kanagambaram%20Street%2C%20Peerkankaranai%2C%20Chennai%20600063"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Get Directions</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 📝 Registration Form -->
+  <section id="enroll" class="enroll">
+    <div class="container reveal">
+      <div class="form-container">
+        <div class="form-mascot">🦁</div>
+        <div style="text-align: center;">
+          <h2 class="h2-title"
+            style="color: var(--pink); text-shadow: none; border-bottom: 4px dashed var(--yellow); padding-bottom: 10px;">
+            Join The Adventure!</h2>
+          <p class="p-cute" style="margin: 20px auto 0;">Send us a message and we'll invite you for a fun campus tour!
+          </p>
+        </div>
+
+        <form id="enroll-form" onsubmit="handleEnrollSubmit(event);">
+          <div class="form-grid">
+            <div class="f-group">
+              <label>Parent's Super Name</label>
+              <input type="text" id="parent-name" name="parentName" placeholder="e.g. Papa Bear" required>
+            </div>
+            <div class="f-group">
+              <label>Child's Cute Name</label>
+              <input type="text" id="child-name" name="childName" placeholder="e.g. Little Leo" required>
+            </div>
+            <div class="f-group">
+              <label>Parent's Contact Number</label>
+              <input type="tel" id="parent-phone" name="parentPhone" placeholder="e.g. 9876543210" required>
+            </div>
+            <div class="f-group">
+              <label>Parent's Email ID</label>
+              <input type="email" id="parent-email" name="parentEmail" placeholder="e.g. parent@gmail.com" required>
+            </div>
+            <div class="f-group f-col-full">
+              <label>Select Play Group</label>
+              <select id="play-group" name="playGroup" required>
+                <option value="" disabled selected>Pick a fun room!</option>
+                <option value="Play Group (1.5+ Years)">🐣 Play Group (1.5+ Years)</option>
+                <option value="Pre Kindergarten (2.5+ Years)">🦋 Pre Kindergarten (2.5+ Years)</option>
+                <option value="Lower Kindergarten (3.5+ Years)">🚀 Lower Kindergarten (3.5+ Years)</option>
+                <option value="Upper Kindergarten (4.5+ Years)">🎓 Upper Kindergarten (4.5+ Years)</option>
+              </select>
+            </div>
+            <div class="f-group f-col-full">
+              <button type="submit" class="btn btn-yellow btn-submit btn-wiggle">Send Magic Letter! ✉️</button>
+            </div>
+          </div>
+        </form>
+
+        <div id="enroll-feedback" class="form-feedback" aria-live="polite" aria-atomic="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🦶 Footer -->
+  <footer>
+    <div class="train-track">
+      <div class="train">🚂🚃🧸🚃🎨</div>
+    </div>
+    <div class="container">
+      <a href="#" class="footer-logo">
+        <img src="image.png" alt="Starbell Kids Logo">
+        <span>Starbell Kids!</span>
+      </a>
+
+      <div
+        style="font-family: var(--font-hand); font-size: 1.2rem; color: #ECEFF1; margin-bottom: 20px; line-height: 1.6;">
+        <p style="margin-bottom: 5px;"><strong>Owner:</strong> Mrs. P. Vinmani Vijayakumar</p>
+        <p style="margin-bottom: 5px;"><strong>📞 Phone:</strong> 9578315590 &nbsp; | &nbsp; <strong>✉️ Email:</strong>
+          <a href="mailto:Starbellkids@gmail.com"
+            style="color: var(--yellow); text-decoration: none;">Starbellkids@gmail.com</a>
+        </p>
+        <p style="margin-bottom: 15px;"><strong>📍 Location:</strong> 169/7, Kanagambaram Street, Ground floor,
+          Peerkankaranai, Old GST Road, Chennai - 600063</p>
+      </div>
+
+      <p class="footer-text">13 Years of Magical Experiences! Come play with us!</p>
+      <p style="font-family: var(--font-bubbly); color: #78909C;">© 2026 Starbell Playschool. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Floating contact buttons (bottom-right) -->
+  <div class="contact-float" aria-label="Quick contact">
+    <a
+      class="contact-float__btn whatsapp-btn"
+      href="https://wa.me/91XXXXXXXXXX"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat on WhatsApp"
+      data-contact="whatsapp"
+    >
+      <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+        <path
+          d="M16 3C9.37 3 4 8.19 4 14.59c0 2.47.82 4.75 2.22 6.61L5 29l8.05-1.98c1.78.97 3.83 1.52 6.02 1.52 6.63 0 12-5.19 12-11.59C31.07 8.19 22.63 3 16 3Zm0 2.2c5.39 0 9.77 4.2 9.77 9.39 0 5.2-4.38 9.4-9.77 9.4-2.02 0-3.9-.58-5.46-1.57l-.42-.26-4.77 1.17 1.28-4.38-.3-.44a9.12 9.12 0 0 1-1.57-5.12c0-5.19 4.38-9.39 9.77-9.39Z"
+        />
+        <path
+          d="M20.93 18.31c-.23-.11-1.36-.66-1.57-.74-.21-.08-.37-.11-.52.11-.15.22-.6.74-.74.9-.14.15-.28.17-.51.06-.23-.11-.99-.35-1.88-1.13-.7-.61-1.17-1.36-1.31-1.59-.14-.23-.01-.36.1-.47l.35-.4c.12-.13.15-.23.23-.38.08-.15.04-.28-.02-.4-.06-.11-.52-1.23-.71-1.69-.19-.45-.38-.39-.52-.39h-.44c-.15 0-.4.06-.6.28-.21.22-.79.77-.79 1.87s.81 2.16.92 2.32c.11.15 1.59 2.45 3.86 3.43.54.23.96.37 1.29.47.54.17 1.03.15 1.41.09.43-.06 1.36-.54 1.55-1.06.19-.52.19-.96.13-1.06-.06-.1-.21-.16-.44-.27Z"
+        />
+      </svg>
+    </a>
+
+    <a
+      class="contact-float__btn call-btn"
+      href="tel:+91XXXXXXXXXX"
+      aria-label="Call now"
+      data-contact="call"
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path
+          d="M6.6 10.8c1.2 2.3 3.1 4.1 5.4 5.4l1.8-1.8c.2-.2.6-.3.9-.2 1 .3 2 .5 3.1.5.5 0 .9.4.9.9v3c0 .5-.4.9-.9.9C10.2 19.5 4.5 13.8 4.5 6.9c0-.5.4-.9.9-.9h3c.5 0 .9.4.9.9 0 1.1.2 2.1.5 3.1.1.3 0 .7-.2.9l-1.8 1.8Z"
+        />
+      </svg>
+    </a>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
